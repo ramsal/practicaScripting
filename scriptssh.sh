@@ -15,4 +15,4 @@ read puerto
 
 sudo apt-get install sshpass
 
-sshpass -p $pass ssh $user@ip -p $puerto
+sshpass -p $pass ssh $user@$ip -p $puerto
