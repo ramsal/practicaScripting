@@ -1,0 +1,17 @@
+                                                                            
+#!/bin/bash
+
+
+echo "password"
+read pass
+
+echo "usuario"
+read user
+
+echo -n "ip"
+read ip
+
+echo "puerto"
+read port
+
+sshpass -p $pass ssh -p $port $user@$ip
