@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "Pon tu direccion ip"
+read ip
+echo "Pon el numero del puerto"
+read port
+echo "Pon el nombre del usuario"
+read user
+echo "Introduce la contraseña"
+read password
+
+sshpass -p $password ssh $user@$ip -p $port
