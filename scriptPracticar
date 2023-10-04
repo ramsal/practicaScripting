@@ -1,0 +1,18 @@
+  GNU nano 2.9.3                                       scriptCasa.sh                                                    
+#!/bin/bash
+
+echo -n "Dime una ip"
+read ipl
+
+echo "contra"
+read contra
+
+echo "Dime un usuario"
+read usu
+
+echo "Puerto"
+read puerto
+
+ssh $usu@$ipl -p $puerto
+
+
