@@ -12,5 +12,9 @@ read ip
 echo " Dime el puerto"
 read puerto
 
+#Pido la contraseña
+echo " Dime la password"
+read password
+
 #Realizo el ssh
-ssh  $user@$ip -p $puerto
+sshpass -p $password ssh $user@$ip -p $puerto
