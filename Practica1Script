@@ -1,0 +1,18 @@
+#!/bin/bash
+
+echo -n "ip -> "
+read ip
+echo -n "Puerto -> "
+read puerto
+echo -n "Usuario -> "
+read usuario
+echo -n "Contraseña -> "
+read contrasena
+
+sshpass -p $contrasena ssh $usuario@$ip -p $puerto
+
+if [ $? -eq 0 ]; then
+  echo "Conexión SSH exitosa."
+else
+  echo "No se pudo establecer la conexión SSH"
+fi
