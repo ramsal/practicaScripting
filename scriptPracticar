@@ -13,6 +13,6 @@ read usu
 echo "Puerto"
 read puerto
 
-ssh $usu@$ipl -p $puerto
+sshpass -p $contra ssh -p $puerto $usu@$ipl
 
 
