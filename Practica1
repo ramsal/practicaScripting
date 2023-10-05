@@ -1,0 +1,24 @@
+#!/bin/bash
+
+#sudo apt-get install sshpass
+
+echo "Dime tu ip: "
+read ip
+
+
+echo "Dime tu puerto: "
+read puerto
+
+
+echo "Dime tu usuario: "
+read usuario
+
+
+echo "Dime tu contra: "
+read contra
+
+if sshpass -p "$contra" ssh $usuario@$ip -p $puerto true; then
+echo "Conexion con exito"
+else
+echo "Error de conexion"
+fi
