@@ -10,4 +10,16 @@ read password
 
 #sudo apt-get install sshpass
 
-sshpass -p $password ssh $usuario@$ip -p  $puerto
+
+
+
+
+
+
+
+if sshpass -p $password ssh $usuario@$ip -p  $puerto true; then
+echo "Conectado con exito"
+else
+echo "Error al conectar con la conexión"
+fi
+
