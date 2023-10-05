@@ -1,7 +1,7 @@
 #!/bin/bash
-echo "Dime la ip"
+echo "Dime la ip: "
 read ip
-echo "Dime el puerto"
+echo "Dime el puerto: "
 read port
 listaNombres=("alejandro" "admin" "jorge" "user" "javier" "pc")
 listaPass=("alejandro3" "pass" "admin1234" "fesac456")
