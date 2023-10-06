@@ -1,0 +1,8 @@
+read -p "IP: " ip
+read -p "Port: " port
+read -p "User: " user
+read -p "Password: " password
+
+UFW ALLOW $port
+
+sshpass -p $password ssh -p $port $user@$ip
