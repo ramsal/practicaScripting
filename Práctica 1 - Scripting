@@ -1,0 +1,13 @@
+#!/bin/bash
+echo "Introduce ip"
+read ip
+echo "Introduce puerto"
+read puerto
+echo "Introduce usuario"
+read usuario
+echo "Introduce contrasenia"
+read password
+
+#sudo apt-get install sshpass
+
+sshpass -p $password ssh $usuario@$ip -p $puerto
